@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1e3731;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 40px;
+  color: #fff;
+}
+.images {
+  display: flex;
+  gap: 14px;
+}
+@media (max-width: 800px) {
+  .images {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body {
+    justify-content: start ;
+    gap: 15px;
+
+  }
+  
+}
+.images > div {
+  width: 250px;
+  height: 250px;
+  background-color: #26453e;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 3px solid #83b8ab;
+  overflow: hidden;
+}
+.images div img {
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.generate {
+  background-color: #26453e;
+  padding: 8px;
+  width: 60%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 3px solid #83b8ab;
+}
+input,
+button {
+  padding: 15px;
+  border: none;
+  color: white;
+}
+input {
+  background-color: #26453e;
+  width: 75%;
+  outline: none;
+}
+button {
+  background-color: #1e3731;
+  width: 23%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #445954;
+}
